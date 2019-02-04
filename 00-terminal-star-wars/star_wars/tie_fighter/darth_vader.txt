@@ -1,0 +1,3 @@
+I AM NOT LORD HELMETthe echo command and some >> at the end of my string will append this to the darth vader file
+ADDING MORE TEXT TO THE DARTH VADER FILE
+ADDING MORE TEXT TO THE DARTH VADER FILE VIA THE CMD LINE
