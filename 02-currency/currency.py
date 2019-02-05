@@ -1,23 +1,23 @@
 def currency_converter(amount):
-    amounts = {10: 0, 1:0, .25 : 0, .05: 0, .01: 0 }
-    keys = dict.keys(amounts)
+    amounts = {10000:0, 5000:0, 1000:0, 500:0, 100:0, 25:0, 10:0, 5:0, 1:0}
+    words = ["hundred dollar bill", "fifty dollar bill", "ten dollar bill", "five dollar bill", "one dollar bill", "quarter", "Dime", "Nickel", "Penny"]
+    total_amount = amount * 100
 
-    while True:
-        currency = amount 
-        for key in keys:
-            print(f'this is the key {key} and this is the {amount}')
-            if currency - key > 1:
-                amounts[key] += 1
-                currency -= key
-                print(currency, key)
-                if currency == 0:
-                    break 
+    for item in dict.keys(amounts):
+            while total_amount - item >= 0:
+                amounts[item] += 1
+                total_amount -= item
             else:
-                continue 
-    
-    return amounts
+                pass
 
-    
+    totals =  list(dict.values(amounts))
+    i = 0 
+    while i < len(words):
+        if totals[i]:
+            print(f'{totals[i]}: {words[i]}')
+            i += 1
+        else:
+            i += 1
 
 
-print(currency_converter(10))
+print(currency_converter(12.33))
