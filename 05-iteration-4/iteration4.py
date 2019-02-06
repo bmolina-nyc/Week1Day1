@@ -1,5 +1,5 @@
 def iterator(input_vals):
-    flattened = []
+    
     for x in input_vals:
         if type(x) != list:
             print(x)
@@ -10,5 +10,7 @@ def iterator(input_vals):
                         print(y)
                 else:
                     print(el)
+                   
 
-print(iterator([1, 2, ['jeff', 'tom'], [42, ['billy', 'jason']]]))
+iterator([1, 2, ['jeff', 'tom'], [42, ['billy', 'jason']]])
+
